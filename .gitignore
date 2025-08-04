@@ -1,0 +1,29 @@
+# Keil MDK-ARM build files
+Objects/
+Listings/
+*.uvguix*
+*.uvoptx
+
+
+# Debug configuration files
+DebugConfig/
+
+# Event recorder files
+*.scvd
+
+# VS Code files (optional - uncomment if you don't want to share VS Code settings)
+# .vscode/
+
+# General build artifacts
+*.bin
+*.hex
+*.elf
+
+# Temporary files
+*~
+*.tmp
+*.bak
+
+# OS specific files
+.DS_Store
+Thumbs.db
