@@ -14,6 +14,7 @@ extern "C"
 #include "adc.h"
 #include "uart.h"
 #include "spi.h"
+#include "iic.h"
 
 #ifdef __cplusplus
 }

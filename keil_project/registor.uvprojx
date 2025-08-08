@@ -444,11 +444,6 @@
               <FilePath>..\Drivers\src\tim.c</FilePath>
             </File>
             <File>
-              <FileName>adc.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>..\Drivers\src\adc.c</FilePath>
-            </File>
-            <File>
               <FileName>uart.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\src\uart.c</FilePath>
@@ -462,6 +457,11 @@
               <FileName>iic.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Drivers\src\iic.c</FilePath>
+            </File>
+            <File>
+              <FileName>adc.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\drivers\src\adc.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -499,11 +499,6 @@
               <FilePath>..\Drivers\inc\tim.h</FilePath>
             </File>
             <File>
-              <FileName>adc.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>..\Drivers\inc\adc.h</FilePath>
-            </File>
-            <File>
               <FileName>uart.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Drivers\inc\uart.h</FilePath>
@@ -517,6 +512,11 @@
               <FileName>iic.h</FileName>
               <FileType>5</FileType>
               <FilePath>..\Drivers\inc\iic.h</FilePath>
+            </File>
+            <File>
+              <FileName>adc.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>..\drivers\inc\adc.h</FilePath>
             </File>
           </Files>
         </Group>
