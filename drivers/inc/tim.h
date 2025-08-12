@@ -8,27 +8,17 @@ extern "C"
 
 #include "stm32system.h"
 
-/**
-  * @brief  TIM Time base Configuration Structure definition
-  */
-typedef struct {
-    uint16_t Prescaler;   /*!< Specifies the prescaler value used to divide the TIM clock.
-                               This parameter can be a number between 0x0000 and 0xFFFF */
-    uint16_t AutoReload;  /*!< Specifies the period value to be loaded into the active
-                               Auto-Reload Register at the next update event.
-                               This parameter can be a number between 0x0000 and 0xFFFF */
+typedef struct 
+{
+  uint16_t Prescaler;
+  uint16_t AutoReload;  
 } TIM_BaseConfig_t;
 
-/**
-  * @brief  TIM Output Compare Configuration Structure definition
-  */
-typedef struct {
-    uint8_t Channel;      /*!< Specifies the TIM channel.
-                               This parameter can be a value of @ref TIM_Channel */
-    uint8_t OCMode;       /*!< Specifies the TIM mode.
-                               This parameter can be a value of @ref TIM_Output_Compare_Mode */
-    uint16_t Pulse;       /*!< Specifies the pulse value to be loaded into the Capture Compare Register.
-                               This parameter can be a number between 0x0000 and 0xFFFF */
+typedef struct 
+{
+  uint8_t Channel;      
+  uint8_t OCMode;       
+  uint16_t Pulse;       
 } TIM_OCConfig_t;
 
 

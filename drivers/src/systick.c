@@ -7,18 +7,18 @@ static volatile uint32_t systick_ms = 0;
 #define SYSTICK_LOAD_16MHz      (16000U)        // For 1ms tick at 16MHz
 #define SYSTICK_LOAD_8MHz       (8000U)         // For 1ms tick at 8MHz
 
-#define SYS_CTRL_EN             (1U << 0)       /*!< Counter enable */
-#define SYS_CTRL_TICKINT        (1U << 1)       /*!< Enable SysTick exception request */
-#define SYS_CTRL_CLKSRC         (1U << 2)       /*!< Clock source: 0 = external, 1 = processor clock (AHB) */
-#define SYS_CTRL_CNTFLAG        (1U << 16)      /*!< Returns 1 if timer counted to 0 since last read */
+#define SYS_CTRL_EN             (1U << 0)       // Counter enable 
+#define SYS_CTRL_TICKINT        (1U << 1)       // Enable SysTick exception request 
+#define SYS_CTRL_CLKSRC         (1U << 2)       // Clock source: 0 = external, 1 = processor clock (AHB) 
+#define SYS_CTRL_CNTFLAG        (1U << 16)      // Returns 1 if timer counted to 0 since last read 
 #define SYS_CTRL_ENABLE_MASK    (SYS_CTRL_EN | SYS_CTRL_TICKINT | SYS_CTRL_CLKSRC)
 
 void SysTick_Init()
 {
-    SYSTICK_CTRL  = 0;                      		// Disable SysTick
-    SYSTICK_LOAD  = SYSTICK_LOAD_72Mhz - 1; 		// Load value for 1ms tick at 72MHz
-    SYSTICK_VAL   = 0;                      		// Clear current value
-    SYSTICK_CTRL |= SYS_CTRL_ENABLE_MASK;   		// Enable SysTick with interrupts
+    SYSTICK_CTRL  = 0;                      	// Disable SysTick
+    SYSTICK_LOAD  = SYSTICK_LOAD_72Mhz - 1; 	// Load value for 1ms tick at 72MHz
+    SYSTICK_VAL   = 0;                      	// Clear current value
+    SYSTICK_CTRL |= SYS_CTRL_ENABLE_MASK;   	// Enable SysTick with interrupts
 }
 
 void SysTick_Handler(void)

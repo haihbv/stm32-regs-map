@@ -25,12 +25,10 @@ int main(void)
 void gpio_config(void)
 {
 	RCC_APB2ClockCmd(RCC_APB2_GPIOC, ENABLE);
-	
+
 	GPIO_InitTypeDef gpio;
 	gpio.Mode = GPIO_MODE_OUTPUT_PP;
 	gpio.Pin = GPIO_PIN_13;
 	gpio.Speed = GPIO_SPEED_50MHZ;
 	GPIO_Init(GPIOC, &gpio);
 }
-
-

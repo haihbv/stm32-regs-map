@@ -16,5 +16,3 @@ int main(void)
 		delay_ms(1000);
 	}
 }
-
-

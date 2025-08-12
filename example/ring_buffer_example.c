@@ -1,4 +1,4 @@
-#include "main.h"
+#include "peripherals.h"
 #include "ring_buffer.h"
 
 #define UART_BUFFER_SIZE 128
@@ -44,4 +44,3 @@ void USART1_Polling(void)
 		ring_buffer_put(&uart_rx_buffer, tmpreg);
 	}
 }
-

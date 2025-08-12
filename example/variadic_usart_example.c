@@ -1,4 +1,4 @@
-#include "main.h"
+#include "peripherals.h"
 #include "uart_vprintf.h"
 
 static uint8_t buffer[128];
@@ -19,4 +19,3 @@ int main()
 		}
 	}
 }
-

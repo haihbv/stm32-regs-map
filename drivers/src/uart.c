@@ -77,15 +77,15 @@ void USART_Init(USART_HandleTypeDef *huart)
     }
 
     SET_BIT(huart->USARTx->CR1, USART_CR1_ENABLE_MASK);
-    CLEAR_BIT(huart->USARTx->CR1, USART_CR1_PCE | USART_CR1_M); 
-		
+    CLEAR_BIT(huart->USARTx->CR1, USART_CR1_PCE | USART_CR1_M);
+
     if (huart->StopBits == USART_CR2_STOP_1)
     {
-        huart->USARTx->CR2 &= ~USART_CR2_STOP_2; 
+        huart->USARTx->CR2 &= ~USART_CR2_STOP_2;
     }
     else if (huart->StopBits == USART_CR2_STOP_2)
     {
-        huart->USARTx->CR2 |= USART_CR2_STOP_2; 
+        huart->USARTx->CR2 |= USART_CR2_STOP_2;
     }
     if (huart->IRQ_Enable == ENABLE)
     {
@@ -106,7 +106,7 @@ void USART_Init(USART_HandleTypeDef *huart)
 }
 void USART_SendData(__IO USART_TypeDef *USARTx, uint16_t Data)
 {
-	USARTx->DR = (Data & (uint16_t)0x01FF);
+    USARTx->DR = (Data & (uint16_t)0x01FF);
 }
 void USART_SendChar(__IO USART_TypeDef *USARTx, char c)
 {

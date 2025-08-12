@@ -48,15 +48,15 @@ typedef struct __attribute__((packed))
 } USART_HandleTypeDef;
 
 uint16_t USART_GetBaudRate(uint32_t pclk, uint32_t baudrate);
-void USART1_IRQHandler(void);
-void USART2_IRQHandler(void);
-void USART3_IRQHandler(void);
-
 extern void USART_GPIO_Config(__IO USART_TypeDef *USARTx);
 void USART_Init(USART_HandleTypeDef *huart);
 void USART_SendData(__IO USART_TypeDef *USARTx, uint16_t Data);
 void USART_SendChar(__IO USART_TypeDef *USARTx, char c);
 void USART_SendString(__IO USART_TypeDef *USARTx, const char *str);
+
+void USART1_IRQHandler(void);
+void USART2_IRQHandler(void);
+void USART3_IRQHandler(void);
 #ifdef __cplusplus
 }
 #endif

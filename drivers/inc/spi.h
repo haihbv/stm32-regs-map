@@ -81,14 +81,14 @@ extern "C"
  */
 typedef struct
 {
-    uint16_t mode;        ///< Master or Slave mode
-    uint16_t baud_rate;   ///< Baud rate prescaler
-    uint16_t ss;          ///< Software NSS setting (SSI)
-    uint16_t cpol;        ///< Clock polarity
-    uint16_t cpha;        ///< Clock phase
-    uint16_t first_bit;   ///< Bit order: MSB or LSB first
-    uint16_t data_size;   ///< Data size: 8-bit or 16-bit
-    uint16_t direction;   ///< Communication mode: full duplex or receive only
+    uint16_t mode;        // Master or Slave mode
+    uint16_t baud_rate;   // Baud rate prescaler
+    uint16_t ss;          // Software NSS setting (SSI)
+    uint16_t cpol;        // Clock polarity
+    uint16_t cpha;        // Clock phase
+    uint16_t first_bit;   // Bit order: MSB or LSB first
+    uint16_t data_size;   // Data size: 8-bit or 16-bit
+    uint16_t direction;   // Communication mode: full duplex or receive only
 } SPI_InitTypeDef;
 
 
