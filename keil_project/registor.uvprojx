@@ -357,7 +357,7 @@
               <MiscControls></MiscControls>
               <Define></Define>
               <Undefine></Undefine>
-              <IncludePath>..\driver\inc;..\driver\src;..\driver\ring_buffer;..\driver\variadic_uart</IncludePath>
+              <IncludePath>..\driver\inc;..\driver\src;..\driver\ring_buffer;..\driver\variadic_uart;..\modules\ds3231</IncludePath>
             </VariousControls>
           </Aads>
           <LDads>

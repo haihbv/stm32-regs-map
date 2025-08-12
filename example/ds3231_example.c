@@ -10,11 +10,11 @@ int main(void)
 	RCC_Clock72MHz_HSE();
 	SysTick_Init();
 	I2C1_Init();
-	ds3231_set_time(3, 43, 0);
+	DS3231_Set_Time(3, 43, 0);
 	while (1)
 	{
 		gpio_config();
-		ds3231_get_time(&h, &m, &s);
+		DS3231_Get_Time(&h, &m, &s);
 		if (s > 1 && s < 30)
 		{
 			GPIOC->ODR.REG ^= (1 << 13);
